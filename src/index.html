@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Dabeee Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body class="bg-gray-700 text-gray-900 font-sans m-0 p-0">
+    <!-- Navigation Bar -->
+    <header
+      class="header bg-gray-800 shadow text-white fixed w-full z-10 top-0"
+    >
+      <nav class="container mx-auto p-6 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-white">Dabeee</a>
+        <!-- Navigation Links -->
+        <ul class="hidden md:flex space-x-4">
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li>
+            <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+          </li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 py-4">
+        <ul class="flex flex-col space-y-4">
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li>
+            <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+          </li>
+          <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="herosec bg-gray-800 text-white py-16">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center md:space-x-6 text-center md:text-left"
+        >
+          <!-- Image -->
+          <div class="md:w-1/2 mb-6 md:mb-0 flex justify-center">
+            <img
+              src="/img/dave2.jpg"
+              alt="Picture of myself"
+              class="heropic rounded-full w-48 h-48 border-4 border-white"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="herotext md:w-1/2">
+            <h1 class="text-5xl font-bold">
+              Hello, I'm <span class="typedText">Dave Salte</span>
+            </h1>
+            <p class="mt-4 text-lg">
+              A passionate developer specializing in web development
+            </p>
+            <a
+              href="#portfolio"
+              class="mt-6 inline-block bg-gray-600 text-white py-2 px-4 rounded hover:bg-white hover:text-gray-900"
+              >View My Work</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="aboutsec py-16 bg-gray-700 pb-16">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center md:space-x-6 text-center md:text-left"
+        >
+          <!-- Image -->
+          <div class="md:w-1/2 mb-6 md:mb-0 flex justify-center aboutpic">
+            <img
+              src="/img/dave1.jpg"
+              alt="My picture"
+              class="rounded-full w-48 h-48 border-4 border-white"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="md:w-1/2 abouttext">
+            <h2 class="text-3xl font-bold mb-6 text-white">About Me</h2>
+            <p class="text-white max-w-2xl mx-auto">
+              I am a third-year BSIT student specializing in cybersecurity and
+              web development. I have a strong passion for coding, learning new
+              technologies, and creating innovative solutions. I am currently
+              learning Vue.js, Laravel, and ethical hacking, and I aim to
+              leverage my skills to build secure and efficient web applications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="skills"
+        class="aboutgraph skills-content skills-animation py-16 text-white mb-8"
+      >
+        <h5 class="text-center mb-8">Skills</h5>
+
+        <!-- HTML Skill -->
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 90%"
+            ></div>
+          </div>
+        </div>
+
+        <!-- CSS Skill -->
+        <div class="progress">
+          <span class="skill"><span>CSS</span> <i class="val">60%</i></span>
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 60%"
+            ></div>
+          </div>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="progress">
+          <span class="skill"
+            ><span>JavaScript</span> <i class="val">45%</i></span
+          >
+          <div class="progress-bar-wrap">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuenow="45"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 45%"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portsec bg-gray-800 py-16">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-6 text-white">
+            Portfolio
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8">
+            <!-- Added padding to the grid -->
+            <!-- Project 1 -->
+            <div class="bg-white p-6 shadow rounded portpic1">
+              <img
+                src="/img/proj1.jpg"
+                alt="Project 1"
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h3 class="text-xl font-bold">Project One</h3>
+              <p class="text-gray-700">
+                A project on database integration in Laravel involves connecting
+                the application to a relational database, managing data with
+                Eloquent ORM, and performing CRUD operations through models and
+                migrations.
+              </p>
+            </div>
+            <!-- Project 2 -->
+            <div class="bg-white p-6 shadow rounded portpic2">
+              <img
+                src="/img/proj2.jpg"
+                alt="Project 2"
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h3 class="text-xl font-bold">Project Two</h3>
+              <p class="text-gray-700">
+                Join CSU Church's praise and worship team with HymnMunity.
+                Effortlessly manage schedules, monitor attendance, and
+                streamline communication for rehearsals and services. Unite
+                voices in harmony and spread love, faith, and unity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contactsec bg-gray-800 text-white py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+          <p class="mb-6">
+            I'm currently open to freelance opportunities and collaborations.
+            Feel free to reach out!
+          </p>
+          <a
+            href="mailto:your.email@example.com"
+            class="inline-block bg-gray-600 text-white py-2 px-4 rounded hover:bg-white hover:text-gray-900"
+            >Get In Touch</a
+          >
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="text-white py-6 mt-5">
+          <div class="container mx-auto text-center">
+            <p>© 2024 Dave Salte. All rights reserved.</p>
+            <p>
+              Follow me on
+              <a
+                href="https://github.com/DaveSLT"
+                target="_blank"
+                class="text-blue-400 hover:underline"
+                >GitHub</a
+              >
+            </p>
+          </div>
+        </footer>
+      </section>
+    </main>
+
+    <script>
+      /* ----- TYPING EFFECT ----- */
+      var typingEffect = new Typed(".typedText", {
+        strings: ["Dave Salte", "Dave Salte", ""],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+
+      /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "80px",
+        duration: 2000,
+        reset: true,
+      });
+
+      /* -- HOME -- */
+      sr.reveal(".herosec", { delay: 100 });
+      sr.reveal(".aboutgraph", { delay: 100 });
+      sr.reveal(".portsec", { delay: 100 });
+
+      /* -- PROJECT BOX -- */
+
+      /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
+
+      /* -- ABOUT INFO & CONTACT INFO -- */
+      const srLeft = ScrollReveal({
+        origin: "left",
+        distance: "80px",
+        duration: 2000,
+        reset: true,
+      });
+
+      srLeft.reveal(".heropic", { delay: 600 });
+      srLeft.reveal(".aboutpic", { delay: 600 });
+      srLeft.reveal(".portpic1", { delay: 100 });
+      srLeft.reveal(".aboutsec", { delay: 800 });
+
+      /* -- ABOUT SKILLS & FORM BOX -- */
+      const srRight = ScrollReveal({
+        origin: "right",
+        distance: "80px",
+        duration: 2000,
+        reset: true,
+      });
+
+      srRight.reveal(".abouttext", { delay: 100 });
+      srRight.reveal(".portpic2", { delay: 100 });
+      srRight.reveal(".herotext", { delay: 600 });
+
+      const srBottom = ScrollReveal({
+        origin: "bottom",
+        distance: "80px",
+        duration: 2000,
+        reset: true,
+      });
+
+      srBottom.reveal(".contactsec", { delay: 100 });
+    </script>
+  </body>
+</html>
